@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Mamadou Saïdou DIALLO - Senior AI Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter for professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6;
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #3b82f6;
+            /* Blue-500 */
+            border-radius: 9999px;
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: #1d4ed8;
+            /* Blue-700 */
+        }
+
+        .experience-header {
+            border-left: 3px solid #60a5fa;
+            /* Blue-400 */
+            padding-left: 0.75rem;
+        }
+
+        /* Custom styles for icon replacement (lucide-react equivalent) */
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 2;
+            stroke: currentColor;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            vertical-align: middle;
+        }
+
+        .icon-phone:before {
+            content: "\e90b";
+        }
+
+        .icon-mail:before {
+            content: "\e905";
+        }
+
+        /* Placeholder for a few icons we might use */
+        .icon-linkedin {
+            content: "L";
+        }
+
+        /* Simplified placeholder */
+        .icon-github {
+            content: "G";
+        }
+
+        /* Simplified placeholder */
+        .icon-ai {
+            content: "⚡";
+        }
+
+        .icon-data {
+            content: "📊";
+        }
+    </style>
+</head>
+
+<body class="p-4 md:p-8">
+
+    <div id="cv-app" class="max-w-6xl mx-auto bg-white shadow-2xl rounded-xl overflow-hidden">
+        <!-- Header Section -->
+        <header class="bg-blue-600 text-white p-6 md:p-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Mamadou Saïdou DIALLO</h1>
+            <h2 class="text-xl md:text-2xl font-light mt-1 opacity-90">AI Engineer | Data Platform Architect</h2>
+        </header>
+
+        <!-- Contact Info Bar -->
+        <div class="bg-blue-700 text-white py-3 px-6 md:px-8 flex flex-wrap justify-between text-sm md:text-base">
+            <div class="flex items-center space-x-2 mr-4 mt-1 md:mt-0">
+                <svg class="icon w-4 h-4" viewBox="0 0 24 24">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.08 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span id="phone-display">+221 77 778 33 55</span>
+            </div>
+            <div class="flex items-center space-x-2 mr-4 mt-1 md:mt-0">
+                <svg class="icon w-4 h-4" viewBox="0 0 24 24">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                <a id="email-display" href="mailto:saidouhw02@gmail.com"
+                    class="hover:underline">saidouhw02@gmail.com</a>
+            </div>
+            <div class="flex items-center space-x-2 mr-4 mt-1 md:mt-0">
+                <svg class="icon w-4 h-4" viewBox="0 0 24 24">
+                    <path d="M16 8a4 4 0 0 0-4 4v2" />
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 16v-2" />
+                    <rect x="7" y="7" width="10" height="10" rx="2" ry="2" />
+                </svg>
+                <a id="linkedin-display" href="https://linkedin.com/in/mamadou-saïdou-diallo" target="_blank"
+                    class="hover:underline">linkedin: dmamadou-saïdou-diallo-744920296/</a>
+            </div>
+            <div class="flex items-center space-x-2 mt-1 md:mt-0">
+                <svg class="icon w-4 h-4" viewBox="0 0 24 24">
+                    <path
+                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3-1 3-4.4 3-5.5 0-1.2-.5-2.2-1.2-3 0 0-1.2-.4-4 1.5-2.8-.4-6 1.5-6 1.5-.7.8-1.2 1.8-1.2 3 0 1.1 0 4.5 3 5.5a4.8 4.8 0 0 0-1 3.5v4" />
+                    <path d="M9 18c-3.1 0-5.5-2.3-5.5-5.5S5.9 7 9 7s5.5 2.3 5.5 5.5S12.1 18 9 18z" />
+                </svg>
+                <a id="github-display" href="https://github.com/SaidouJalloh" target="_blank"
+                    class="hover:underline">Github: SaidouJalloh</a>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- Left Column: Profile, Skills, Education, Distinctions (Side Bar) -->
+            <div class="lg:col-span-1 space-y-8">
+
+                <!-- Profil Professionnel -->
+                <section>
+                    <h3 class="section-title text-xl font-bold text-gray-800">Profil Professionnel</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        Senior AI/ML Engineer avec <span class="highlight">4+ ans d'expérience</span> en
+                        industrialisation de modèles IA et architecture de pipelines data massives. <span
+                            class="highlight">Major de promotion Master IA </span> et <span class="highlight">Champion
+                            GalsenAI</span>. Expertise internationale (USA) combinée à une
+                        connaissance approfondie du marché africain. Track record : <span class="highlight">+40\% de
+                            gains de productivité</span>, <span class="highlight">10K+ utilisateurs</span> impactés,
+                        mentorat de <span class="highlight">500+ professionnels</span>.
+                    </p>
+                </section>
+
+                <!-- Compétences Techniques -->
+                <section>
+                    <h3 class="section-title text-xl font-bold text-gray-800">Compétences Techniques</h3>
+                    <div id="skills-list" class="space-y-4">
+                        <!-- Skills will be rendered here by JS -->
+                    </div>
+                </section>
+
+                <!-- Formation Académique -->
+                <section>
+                    <h3 class="section-title text-xl font-bold text-gray-800">Formation Académique</h3>
+                    <div id="education-list" class="space-y-4">
+                        <!-- Education will be rendered here by JS -->
+                    </div>
+                </section>
+
+                <!-- Distinctions & Récompenses -->
+                <section>
+                    <h3 class="section-title text-xl font-bold text-gray-800">Distinctions & Récompenses</h3>
+                    <ul id="distinctions-list" class="list-disc ml-5 space-y-2 text-sm text-gray-600">
+                        <!-- Distinctions will be rendered here by JS -->
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Right Column: Experience, Projects -->
+            <div class="lg:col-span-2 space-y-8">
+
+                <!-- Expérience Professionnelle -->
+                <section>
+                    <h3 class="section-title text-xl font-bold text-gray-800">Expérience Professionnelle</h3>
+                    <div id="experience-list" class="space-y-6">
+                        <!-- Experience entries will be rendered here by JS -->
+                    </div>
+                </section>
+
+                <!-- Projets Techniques Majeurs -->
+                <section>
+                    <h3 class="section-title text-xl font-bold text-gray-800">Projets Techniques Majeurs</h3>
+                    <div id="projects-list" class="space-y-4">
+                        <!-- Projects will be rendered here by JS -->
+                    </div>
+                </section>
+
+                <!-- Langues & Intérêts (for visibility on the right) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <section>
+                        <h3 class="section-title text-xl font-bold text-gray-800">Langues</h3>
+                        <div id="languages-list" class="space-y-1 text-sm text-gray-600">
+                            <!-- Languages will be rendered here by JS -->
+                        </div>
+                    </section>
+                    <section>
+                        <h3 class="section-title text-xl font-bold text-gray-800">Centres d'Intérêt</h3>
+                        <div id="interests-list" class="text-sm text-gray-600">
+                            <!-- Interests will be rendered here by JS -->
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Data Definition (Keeping the structure modular) ---
+        const data = {
+            skills: [
+                { title: "Data Engineering", items: "Python, SQL (Server, PostgreSQL), MongoDB, Apache Spark, Apache Kafka, Apache Airflow, ETL/ELT, Data Modeling, Data Warehousing" },
+                { title: "AI & ML", items: "TensorFlow, PyTorch, Scikit-Learn, Hugging Face Transformers, LLMs, NLP, Computer Vision, Deep Learning, MLflow, Feature Engineering, Model Deployment" },
+                { title: "Cloud & DevOps", items: "AWS (S3, EC2, Lambda), Azure, Docker, Kubernetes, CI/CD (GitHub Actions, Jenkins), Terraform, Git/GitHub" },
+                { title: "Software Dev", items: "FastAPI, Flask, Node.js, React, REST APIs, Microservices, Unit Testing, Backend Development" }
+            ],
+            education: [
+                {
+                    years: "2023 – 2025",
+                    degree: "Master 2 Intelligence Artificielle",
+                    institution: "Dakar Institute of Technology",
+                    details: "Major de Promotion. Mémoire (18/20) : Conception d'une plateforme Big Data pour l'analyse prédictive en streaming du marché immobilier dakarois"
+                },
+                {
+                    years: "2015 – 2019",
+                    degree: "Licence Professionnelle Informatique",
+                    institution: "Université Nongo Conakry",
+                    details: "Mention Très Bien"
+                }
+            ],
+            distinctions: [
+                "Major de Promotion – Master Intelligence Artificielle, Dakar Institute of Technology (2025)",
+                "Champion GalsenAI – Fraud Detection Challenge (1er Prix)",
+                "3ème Prix – Concours IA pour l'Optimisation AIBD Sénégal"
+            ],
+            languages: [
+                { lang: "Français", level: "Courant" },
+                { lang: "Anglais", level: "Professionnel" }
+            ],
+            interests: "Contribution Open Source, Mentorat Tech, Veille IA/ML, Participation Hackathons, EdTech Africaine",
+            experience: [
+                {
+                    years: "Août 2024 – Présent",
+                    title: "Data Engineer",
+                    company: "Sigma AI",
+                    location: "Miami, USA (Remote)",
+                    tasks: [
+                        "Conception et déploiement de pipelines distribués (Spark, Kafka) pour entraînement de modèles IA sur datasets massifs (10M+ records)",
+                        "Développement d'un système de labellisation semi-automatisée avec ML augmentant la productivité de <span class='highlight'>40%</span>",
+                        "Optimisation des workflows ML/AI en collaboration avec équipes R&D internationales (réduction latence de 30%)",
+                        "<span class='font-semibold'>Stack :</span> Python, Apache Spark, Kafka, AWS, MLflow, Docker, Kubernetes"
+                    ]
+                },
+                {
+                    years: "Mai 2025 – Présent",
+                    title: "Consultant Data & Transformation Digitale",
+                    company: "Entreprise d'Assurance",
+                    location: "Dakar, Sénégal",
+                    tasks: [
+                        "Accompagnement stratégique sur 7 mois pour digitalisation complète (applications métier, site web, automatisation)",
+                        "Architecture et développement full-stack d'applications de gestion interne (React, Node.js, PostgreSQL)",
+                        "Refonte du site institutionnel et mise en place de solutions RPA réduisant les tâches manuelles de <span class='highlight'>60%</span>",
+                        "Optimisation des processus métiers et formation des équipes internes aux outils digitaux"
+                    ]
+                },
+                {
+                    years: "2025 – Présent",
+                    title: "Co-Fondateur & Lead Data Scientist",
+                    company: "AfriAI Solutions",
+                    location: "Dakar, Sénégal",
+                    tasks: [
+                        "Architecture data pour plateformes EdTech : tracking comportemental, dashboards analytiques temps réel",
+                        "Mentorat et formation de <span class='highlight'>500+ jeunes professionnels</span> en Data Engineering, IA et Software Development",
+                        "Développement de curricula techniques et programmes de montée en compétences sur projets réels"
+                    ]
+                },
+                {
+                    years: "2024 – 2025",
+                    title: "Ingénieur IA",
+                    company: "Algorix Solutions",
+                    location: "Dakar, Sénégal",
+                    tasks: [
+                        "<span class='font-semibold'>Projet Néné :</span> Développement de LLMs adaptés aux langues africaines (constitution corpus, pipelines NLP, fine-tuning)",
+                        "Conception d'architectures backend scalables pour chatbots et outils analytiques temps réel",
+                        "<span class='font-semibold'>Stack :</span> Python, TensorFlow, Hugging Face Transformers, FastAPI, MongoDB"
+                    ]
+                },
+                {
+                    years: "2024",
+                    title: "Chef d'Équipe IA -- Projet Weerwi",
+                    company: "Dakar Institute of Technology",
+                    location: "Dakar, Sénégal",
+                    tasks: [
+                        "Management d'une équipe de 5 développeurs pour application santé mobile avec modules IA",
+                        "Intégration chatbot médical et système de recommandation → <span class='highlight'>10 000+ téléchargements</span> en 6 mois",
+                        "Gestion complète du cycle : conception, développement, tests, déploiement"
+                    ]
+                },
+                {
+                    years: "2021 – 2022",
+                    title: "Administrateur Bases de Données",
+                    company: "Ultimo",
+                    location: "Conakry, Guinée",
+                    tasks: [
+                        "Optimisation requêtes SQL complexes et sécurisation bases de données critiques (SQL Server, PostgreSQL)",
+                        "Mise en place stratégies backup/recovery et monitoring performance"
+                    ]
+                },
+                {
+                    years: "2020 – 2021",
+                    title: "Assistant ICT",
+                    company: "Ministère Investissements & PPP",
+                    location: "Conakry, Guinée",
+                    tasks: [
+                        "Gestion parc informatique ministériel et développement plateforme web de suivi projets secteur privé"
+                    ]
+                }
+            ],
+            projects: [
+                {
+                    title: "Plateforme d'analyse prédictive en streaming du marché immobilier dakarois",
+                    details: "<span class='font-semibold'>Big Data (Mémoire Master 18/20)</span> -- Architecture complète avec Apache Spark, Kafka, ML pour prédictions temps réel (<span class='highlight'>85\% précision</span>)"
+                },
+                {
+                    title: "Pipelines ML end-to-end pour détection fraude",
+                    details: "<span class='font-semibold'>IA Bancaire (Champion GalsenAI)</span> -- Détection fraude avec <span class='highlight'>94\% F1-score</span>. Stack : Python, XGBoost, LightGBM, Feature Engineering, MLflow"
+                },
+                {
+                    title: "Détection pneumonie & tuberculose sur radiographies",
+                    details: "<span class='font-semibold'>CV Médical</span> -- (CNN, Transfer Learning). Classification maladies du manioc 4 classes avec <span class='highlight'>92\% accuracy</span> (TensorFlow, Data Augmentation)"
+                },
+                {
+                    title: "Solution Computer Vision pour flux passagers et tracking bagages temps réel",
+                    details: "<span class='font-semibold'>AIBD Airport (3ème Prix Concours IA)</span> -- Technologies : YOLO, OpenCV, DeepSORT, Raspberry Pi"
+                },
+                {
+                    title: "Plateforme de veille commerciale automatisée",
+                    details: "<span class='font-semibold'>Gestion Sirius</span> -- Avec prédiction renouvellements et CRM intelligent."
+                },
+                {
+                    title: "Agrégateur emploi multi-sources",
+                    details: "<span class='font-semibold'>Job Aggregator</span> -- (Telegram, Web) avec dashboard analytique du marché."
+                }
+            ]
+        };
+
+        // --- Rendering Functions ---
+
+        // 1. Render Skills
+        function renderSkills() {
+            const container = document.getElementById('skills-list');
+            container.innerHTML = data.skills.map(skill => `
+            <div>
+                <h4 class="font-semibold text-gray-700 mt-2 text-sm">${skill.title}</h4>
+                <p class="text-xs text-gray-500">${skill.items}</p>
+            </div>
+        `).join('');
+        }
+
+        // 2. Render Education
+        function renderEducation() {
+            const container = document.getElementById('education-list');
+            container.innerHTML = data.education.map(edu => `
+            <div class="experience-header">
+                <p class="text-xs font-semibold text-blue-600">${edu.years}</p>
+                <h4 class="font-bold text-gray-800 text-sm">${edu.degree}</h4>
+                <p class="text-sm text-gray-700">${edu.institution}</p>
+                ${edu.details ? `<p class="text-xs text-gray-500 mt-1">${edu.details}</p>` : ''}
+            </div>
+        `).join('');
+        }
+
+        // 3. Render Distinctions
+        function renderDistinctions() {
+            const container = document.getElementById('distinctions-list');
+            container.innerHTML = data.distinctions.map(item => `
+            <li class="text-sm">
+                ${item.replace(/Major de Promotion|Champion GalsenAI|3ème Prix/g, (match) => `<span class='highlight'>${match}</span>`)}
+            </li>
+        `).join('');
+        }
+
+        // 4. Render Experience
+        function renderExperience() {
+            const container = document.getElementById('experience-list');
+            container.innerHTML = data.experience.map(exp => `
+            <div class="experience-header">
+                <div class="flex justify-between items-start mb-1">
+                    <div>
+                        <h4 class="text-base font-bold text-gray-800">${exp.title}</h4>
+                        <p class="text-sm font-medium text-gray-600">${exp.company} | ${exp.location}</p>
+                    </div>
+                    <p class="text-xs font-semibold text-blue-600 flex-shrink-0">${exp.years}</p>
+                </div>
+                <ul class="list-disc ml-5 space-y-1 text-sm text-gray-600">
+                    ${exp.tasks.map(task => `<li>${task}</li>`).join('')}
+                </ul>
+            </div>
+        `).join('');
+        }
+
+        // 5. Render Projects
+        function renderProjects() {
+            const container = document.getElementById('projects-list');
+            container.innerHTML = data.projects.map(project => `
+            <div class="border-l-2 border-gray-200 pl-3">
+                <h4 class="font-semibold text-gray-800 text-sm">${project.title}</h4>
+                <p class="text-xs text-gray-500 mt-0.5">${project.details}</p>
+            </div>
+        `).join('');
+        }
+
+        // 6. Render Languages
+        function renderLanguages() {
+            const container = document.getElementById('languages-list');
+            container.innerHTML = data.languages.map(lang => {
+                // CORRECTION: Vérifie si 'lang.comment' existe et n'est pas vide avant de l'afficher.
+                // Si la propriété 'comment' est absente ou vide, seule la langue et le niveau sont affichés.
+                const commentHtml = lang.comment
+                    ? ` (<span class="text-gray-500">${lang.comment}</span>)`
+                    : '';
+                return `
+                <p><span class="font-semibold">${lang.lang}</span>: ${lang.level}${commentHtml}</p>
+            `;
+            }).join('');
+        }
+
+        // 7. Render Interests
+        function renderInterests() {
+            const container = document.getElementById('interests-list');
+            // Use a comma-separated list of tags/badges for modern look
+            container.innerHTML = data.interests.split(', ').map(item => `
+            <span class="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full mr-2 mb-2">${item}</span>
+        `).join('');
+        }
+
+        // Initialize all rendering on load
+        window.onload = function () {
+            renderSkills();
+            renderEducation();
+            renderDistinctions();
+            renderExperience();
+            renderProjects();
+            renderLanguages();
+            renderInterests();
+        };
+    </script>
+
+</body>
+
+</html>
